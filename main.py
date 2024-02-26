@@ -5,7 +5,10 @@ def saludo_personalizado():
 
 
 # Funcion Contador de Números
-
+def contador_numeros():
+    numero = int(input("Ingrese un número entero positivo: "))
+    for i in range(1, numero + 1):
+        print(i)
 
 # Funcion Calculadora Básica
 
@@ -21,6 +24,8 @@ if __name__ == '__main__':
 
         if opcion == '1':
             saludo_personalizado()
+        elif opcion == '2':
+            contador_numeros()
         elif opcion == '4':
             break
         else:
