@@ -11,7 +11,24 @@ def contador_numeros():
         print(i)
 
 # Funcion Calculadora Básica
+def calculadora_basica():
+    num1 = float(input("Ingrese el primer número: "))
+    num2 = float(input("Ingrese el segundo número: "))
+    operacion = input("Ingrese la operación (+, -, *, /): ")
 
+    if operacion == '+':
+        resultado = num1 + num2
+    elif operacion == '-':
+        resultado = num1 - num2
+    elif operacion == '*':
+        resultado = num1 * num2
+    elif operacion == '/':
+        resultado = num1 / num2
+    else:
+        print("Operación no válida")
+        return
+
+    print(f"Resultado: {resultado}")
 
 # Menú Principal
 if __name__ == '__main__':
@@ -26,6 +43,8 @@ if __name__ == '__main__':
             saludo_personalizado()
         elif opcion == '2':
             contador_numeros()
+        elif opcion == '3':
+            calculadora_basica()
         elif opcion == '4':
             break
         else:
